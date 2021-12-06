@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kalkulačka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="kalkulačka" Height="469" Width="271" Background="Gray">
 
+    <Grid Margin="0,0,0,307" Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Margin="203,150,6,-59" Content="÷" FontSize="48" FontFamily="Arial" FontWeight="Normal"/>
+        <Button Margin="6,150,204,-59" Content="CE" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="137,150,72,-59" Content="x" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="71,150,138,-59" Content="←" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="203,210,6,-119" FontFamily="Arial" FontSize="48" FontWeight="Normal" Content="-"/>
+        <Button Margin="204,270,6,-179" FontFamily="Arial" Content="+" FontSize="48" HorizontalAlignment="Stretch" FontWeight="Normal"/>
+        <Button Margin="203,330,6,-299" Content="=" BorderBrush="#FF205FB9" Background="#FF16FontFamily="Arial""FontWeight="Normal" FontWeight="Normal"/>
+        <Button Margin="137,210,72,-119" Content="9" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="71,210,138,-119" Content="8" FontSize="36" FontFamily="Arial"/>
+        <Button Margin="6,210,204,-119" Content="7" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="137,270,72,-179" Content="6" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="71,270,138,-179" Content="5" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="6,270,204,-179" Content="4" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="137,330,72,-239" Content="3" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="71,330,138,-239" Content="2" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="6,330,204,-239" Content="1" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="137,390,72,-299" Content="π" FontSize="36" FontFamily="Arial" FontWeight="Normal"/>
+        <Button Margin="71,390,138,-299" Content=",&#xD;&#xA;" FontFamily="Arial" FontSize="36" FontWeight="Bold"/>
+        <Button Margin="6,390,204,-299" Content="0" FontFamily="Arial" FontSize="36"/>
+        <Button Margin="6,6,6,6" Content="výsledek"/>
     </Grid>
 </Window>
