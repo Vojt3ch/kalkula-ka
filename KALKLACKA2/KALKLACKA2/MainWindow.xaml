@@ -1,0 +1,51 @@
+﻿<Window x:Class="KALKLACKA2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KALKLACKA2"
+        mc:Ignorable="d"
+        Title="Kalkulačka" Height="500" Width="280" Background="Gray" MinWidth="295" MinHeight="515" MaxHeight="515" MaxWidth="295" >
+    <Grid Margin="10,10,10,10" Background="Gray" RenderTransformOrigin="1.01,0.767">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="464.04"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Margin="198,135,0,269" Content="÷" FontSize="48" FontFamily="Arial" FontWeight="Normal" Click="deleno" Grid.RowSpan="2"/>
+        <Button Margin="198,102,0,334" Content="CE" FontFamily="Arial" FontSize="24" Click="celypryc" Grid.Row="1"/>
+        <Button Margin="131,135,67,269" Content="x" FontFamily="Arial" FontSize="36" Click="krat" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="360"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Margin="-3,135,134,269" Content="←" FontFamily="Arial" FontSize="36" Click="jednopryc" Grid.RowSpan="2"/>
+        <Button Margin="198,200,0,203" FontFamily="Arial" FontSize="48" FontWeight="Normal" Content="-" Click="minus" Grid.Row="1"/>
+        <Button Margin="198,266,0,139" FontFamily="Arial" Content="+" FontSize="48" FontWeight="Normal" Click="plus" Grid.Row="1"/>
+        <Button Margin="198,330,0,10" Content="=" BorderBrush="#FF205FB9" Background="#FF00A2FF" FontFamily="Arial" FontWeight="Normal" FontSize="48" Click="rovnase" Grid.Row="1"/>
+        <Button Margin="131,200,67,203" Content="9" FontFamily="Arial" FontSize="36" Click="klik9" Grid.RowSpan="2"/>
+        <Button Margin="64,200,134,204" Content="8" FontSize="36" FontFamily="Arial" Click="klik8" Grid.Row="1"/>
+        <Button Margin="-3,200,201,204" Content="7" FontFamily="Arial" FontSize="36" Click="klik7" Grid.Row="1"/>
+        <Button Margin="131,265,67,139" Content="6" FontFamily="Arial" FontSize="36" Click="klik6" Grid.Row="1"/>
+        <Button Margin="64,265,134,139" Content="5" FontFamily="Arial" FontSize="36" Click="klik5" Grid.Row="1" RenderTransformOrigin="-3.739,0.49"/>
+        <Button Margin="-3,265,201,139" Content="4" FontFamily="Arial" FontSize="36" Click="klik4" Grid.Row="1"/>
+        <Button Margin="131,330,67,74" Content="3" FontFamily="Arial" FontSize="36" Click="klik3" Grid.Row="1"/>
+        <Button Margin="64,330,134,74" Content="2" FontFamily="Arial" FontSize="36" Click="klik2" Grid.RowSpan="2"/>
+        <Button Margin="-3,330,201,74" Content="1" FontFamily="Arial" FontSize="36" Click="klik1" Grid.Row="1"/>
+        <Button Margin="131,395,67,10" Content="π" FontSize="36" FontFamily="Arial" FontWeight="Normal" Click="pi" Grid.Row="1"/>
+        <Button Margin="64,395,134,10" Content=",&#xD;&#xA;" FontFamily="Arial" FontSize="36" FontWeight="Bold" Click="carka" Grid.Row="1"/>
+        <Button Margin="-3,395,201,10" Content="0" FontFamily="Arial" FontSize="36" Click="klik0" Grid.Row="1"/>
+        <TextBox x:Name="tb" Margin="-3,10,0,375" TextChanged="TextBox_TextChanged" TextAlignment="Right" FontSize="72" TextWrapping="NoWrap" FontFamily="Arial Narrow" Grid.Row="1"/>
+        <Button Margin="-3,102,201,334" Content="%" FontFamily="Arial" FontSize="24" Click="procento" Grid.Row="1"/>
+        <Button Margin="64,102,134,334" Content="x2" FontFamily="Arial" FontSize="24" Click="nadruhou" Grid.Row="1"/>
+        <Button Margin="131,102,67,334" Content="x3" FontFamily="Arial" FontSize="24" Click="odmocnina" Grid.Row="1"/>
+
+    </Grid>
+</Window>
